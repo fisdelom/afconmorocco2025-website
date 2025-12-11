@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFCON Morocco 2025 - Unofficial Fan App</title>
+    <meta
+      name="description"
+      content="Independent fan-made mobile app with schedules, teams, and live updates for the Africa Cup 2025. Not affiliated with CAF."
+    />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://afconmorocco2025.com/" />
+    <meta property="og:title" content="AFCON Morocco 2025 - Unofficial Fan App" />
+    <meta
+      property="og:description"
+      content="Independent fan-made mobile app with schedules, teams, and live updates for the Africa Cup 2025. Not affiliated with CAF."
+    />
+    <meta property="og:image" content="https://picsum.photos/1200/630" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              morocco: {
+                red: '#c1272d',
+                green: '#006233',
+                dark: '#1a1a1a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-qr-code": "https://aistudiocdn.com/react-qr-code@^2.0.18"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
