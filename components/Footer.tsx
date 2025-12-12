@@ -1,4 +1,5 @@
 import logo from '../images/logo.png';
+import React from 'react';
 
 interface FooterProps {
   t: any;

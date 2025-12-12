@@ -1,4 +1,7 @@
 import logo from '../images/logo.png';
+import React from 'react';
+import { Globe } from 'lucide-react';
+import { Language } from '../types';
 
 interface HeaderProps {
   lang: Language;
