@@ -1,6 +1,4 @@
-import React from 'react';
-import { Globe } from 'lucide-react';
-import { Language } from '../types';
+import logo from '../images/logo.png';
 
 interface HeaderProps {
   lang: Language;
@@ -17,21 +15,17 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, t }) => {
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-           {/* 
-             REPLACE THE SRC BELOW WITH YOUR ACTUAL APP LOGO URL 
-             (e.g., download from Play Store console and upload to your assets folder or imgur)
-           */}
-           <img 
-             src="https://placehold.co/100x100/c1272d/ffffff?text=APP+LOGO" 
-             alt="App Logo" 
-             className="w-10 h-10 rounded-xl shadow-sm object-cover"
-           />
-           <span className="font-bold text-xl tracking-tight text-morocco-dark">
-             afconmorocco2025
-           </span>
+          <img
+            src={logo}
+            alt="App Logo"
+            className="w-10 h-10 rounded-xl shadow-sm object-cover"
+          />
+          <span className="font-bold text-xl tracking-tight text-morocco-dark">
+            afconmorocco2025
+          </span>
         </div>
 
-        <button 
+        <button
           onClick={toggleLanguage}
           className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-gray-100 transition-colors text-sm font-medium text-gray-700"
         >

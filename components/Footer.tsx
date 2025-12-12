@@ -1,4 +1,4 @@
-import React from 'react';
+import logo from '../images/logo.png';
 
 interface FooterProps {
   t: any;
@@ -9,16 +9,19 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
     <footer className="bg-morocco-dark text-white py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-           <div className="font-bold text-xl mb-4 md:mb-0">
-             afconmorocco2025
-           </div>
-           <div className="flex gap-6 text-sm text-gray-400">
-             <a href="terms-of-service.html" className="hover:text-white transition-colors">{t.terms_link}</a>
-             <a href="privacy-policy.html" className="hover:text-white transition-colors">{t.privacy_link}</a>
-             <a href="user-data-deletion.html" className="hover:text-white transition-colors">Data Deletion</a>
-             <a href="marketing.html" className="hover:text-white transition-colors">Marketing</a>
-             <a href="support.html" className="hover:text-white transition-colors">Support</a>
-           </div>
+          <div className="flex items-center gap-3 mb-4 md:mb-0">
+            <img src={logo} alt="Afcon 2025" className="w-8 h-8 rounded-lg" />
+            <div className="font-bold text-xl">
+              afconmorocco2025
+            </div>
+          </div>
+          <div className="flex gap-6 text-sm text-gray-400">
+            <a href="terms-of-service.html" className="hover:text-white transition-colors">{t.terms_link}</a>
+            <a href="privacy-policy.html" className="hover:text-white transition-colors">{t.privacy_link}</a>
+            <a href="user-data-deletion.html" className="hover:text-white transition-colors">Data Deletion</a>
+            <a href="marketing.html" className="hover:text-white transition-colors">Marketing</a>
+            <a href="support.html" className="hover:text-white transition-colors">Support</a>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8">
