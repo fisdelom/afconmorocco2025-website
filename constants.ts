@@ -5,7 +5,7 @@ import { ContentConfig, Translation } from './types';
 // ==========================================
 export const CONFIG: ContentConfig = {
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.afcon2025.app",
-  appStoreUrl: "", // Leave empty to show "Coming Soon"
+  appStoreUrl: "https://apps.apple.com/us/app/africa-cup-2025-unofficial-app/id6755598345",
   contactEmail: "contact@afconmorocco2025.com",
   contactPhone: "+212 664 27 28 34",
   contactAddress: "319, Technopark Casablanca, Boulevard Dammam, Casablanca - Morocco",
