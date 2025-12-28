@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => {
           deletion: path.resolve(__dirname, 'user-data-deletion.html'),
           marketing: path.resolve(__dirname, 'marketing.html'),
           support: path.resolve(__dirname, 'support.html'),
+          privacypolicy: path.resolve(__dirname, 'privacypolicy.html'),
         },
       },
     },
