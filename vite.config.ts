@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -9,7 +10,23 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: '0.0.0.0',
     },
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'copy-app-ads',
+        closeBundle() {
+          try {
+            const src = path.resolve(__dirname, 'app-ads.txt');
+            const dest = path.resolve(__dirname, 'dist/app-ads.txt');
+            if (fs.existsSync(src)) {
+              fs.copyFileSync(src, dest);
+            }
+          } catch (error) {
+            console.error('Error copying app-ads.txt:', error);
+          }
+        },
+      },
+    ],
     build: {
       rollupOptions: {
         input: {
